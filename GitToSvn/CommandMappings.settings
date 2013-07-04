@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GitToSvn" GeneratedClassName="CommandMappings">
+  <Profiles />
+  <Settings>
+    <Setting Name="info" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">svn info</Value>
+    </Setting>
+    <Setting Name="update" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">svn rebase</Value>
+    </Setting>
+    <Setting Name="commit" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">svn dcommit</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
