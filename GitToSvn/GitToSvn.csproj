@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+    <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.0\lib\net40-client\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -48,12 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arguments.cs" />
-    <Compile Include="Collection.cs" />
+    <Compile Include="Collections.cs" />
+    <Compile Include="GitArguments.cs" />
     <Compile Include="RepositoryInformationFactory.cs" />
     <Compile Include="RepositoryTypeChecker.cs" />
     <Compile Include="SvnArguments.cs" />
     <Compile Include="VcsRunner.cs" />
-    <Compile Include="GitArguments.cs" />
     <Compile Include="GitToSvnConfiguration.cs" />
     <Compile Include="IApplicationCaller.cs" />
     <Compile Include="IArguments.cs" />
