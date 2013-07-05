@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GitToSvn
+﻿namespace GitToSvn
 {
     public static class SvnToGitCommandTranslator
     {
@@ -8,11 +6,7 @@ namespace GitToSvn
         {
             var command = svnCommand.Trim().ToLowerInvariant();
             var gitCommand = CommandMappings.Default.Properties[command];
-            if (gitCommand == null)
-            {
-                throw new NotImplementedException(string.Format("git-svn command not implemented for '{0}'", svnCommand));
-            }
-            return gitCommand.DefaultValue.ToString();
+            return gitCommand == null ? svnCommand : gitCommand.DefaultValue.ToString();
         }
     }
 }
