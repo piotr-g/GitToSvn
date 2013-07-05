@@ -10,7 +10,7 @@ namespace GitToSvn
             var gitCommand = CommandMappings.Default.Properties[command];
             if (gitCommand == null)
             {
-                throw new NotImplementedException(string.Format("git-svn command not implemented for {0}", svnCommand));
+                throw new NotImplementedException(string.Format("git-svn command not implemented for '{0}'", svnCommand));
             }
             return gitCommand.DefaultValue.ToString();
         }

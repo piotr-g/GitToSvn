@@ -11,13 +11,7 @@ namespace GitToSvn
 
         protected override string Translate(string arg)
         {
-            var originalCommand = arg.Trim().ToLowerInvariant();
-            var command = CommandMappings.Default.Properties[originalCommand];
-            if (command == null)
-            {
-                throw new Exception("Command {0} is not supported in this repository");
-            }
-            return command.DefaultValue.ToString();
+            return SvnToGitCommandTranslator.GetGitCommand(arg);
         }
     }
 }
